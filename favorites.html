@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favorites</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Favorites</h1>
+  <div id="content"></div>
+  <h1>Watched Episodes</h1>
+  <div id="watchedContent"></div>
+  <h1>Read Chapters</h1>
+  <div id="readContent"></div>
+  <button onclick="window.location.href='index.html'">Back to Search</button>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <p id="modalText"></p>
+      <input type="text" id="modalInput">
+      <button onclick="confirmModal()">Confirm</button>
+    </div>
+  </div>
+
+  <script src="favorites.js"></script>
+</body>
+</html>

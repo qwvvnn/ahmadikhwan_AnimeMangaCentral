@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnimeManga Central</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>AnimeManga Central</h1>
+
+  <input type="text" id="search" placeholder="Search Anime or Manga">
+  <select id="searchType">
+    <option value="anime">Anime</option>
+    <option value="manga">Manga</option>
+  </select>
+  <button id="searchBtn">Search</button>
+  <button onclick="window.location.href='favorites.html'">View Favorites</button>
+  <h2 id="recommendedTitle">Recommended Anime</h2>
+  <div id="recommended"></div>
+  <h2 id="resultsTitle">Search Results</h2>
+  <div id="content"></div>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <p id="modalText"></p>
+      <input type="text" id="modalInput">
+      <button onclick="confirmModal()">Confirm</button>
+    </div>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
